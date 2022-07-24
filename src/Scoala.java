@@ -2,11 +2,13 @@ import java.sql.SQLOutput;
 
 public class Scoala {
 
+    //toString() overwritten
     @Override
     public String toString()
     {
         return "Scoala";
     }
+
 
         public static void main(String[] args)
         {
@@ -17,11 +19,11 @@ public class Scoala {
             System.out.println(s);
 
 
-            System.out.println(f.getName() + "..................." + f);
+            System.out.println(f.getName() + " " + f);
             f.setName("Mihaiu Stefan");
             f.setCatalog(true);
             f.setWhichClass(4);
-            System.out.println(f.getName() + "............" + f);
+            System.out.println(f.getName() + " " + f);
 
 
 
@@ -31,8 +33,8 @@ public class Scoala {
             System.out.println(c);
             c.Catalog();
 
-
-            Clasa dif1 = new copil();
+            //The difference between 2 types of references
+            Clasa dif1 = new copil("Ana Florentina");
             copil dif2 = new copil();
             dif2.getElevi();
             dif1.getName();

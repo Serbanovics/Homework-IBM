@@ -4,8 +4,8 @@ public class copil extends Clasa {
 
 
     public copil() {
-        super(4, "Szilagy Marius", false);
-        Elevi = "Don't specified";
+        super(4, "Not specified", false);
+        Elevi = "Not specified";
     }
 
     public copil(String Elevi) {
@@ -17,7 +17,8 @@ public class copil extends Clasa {
         return Elevi;
     }
 
-    public void setElevi(String Elevi) {
+    public void setElevi(String Elevi)
+    {
         Elevi = Elevi;
     }
 

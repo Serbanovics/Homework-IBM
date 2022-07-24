@@ -40,16 +40,18 @@ public class Clasa {
         Catalog = catalog;
     }
 
+
     public void Catalog(){
         if(Catalog == true)
         {
-            System.out.println("Clasa respectiva are calatogu farbricat");
+            System.out.println(Name + " he had an A average in 4th grade");
         }
         else{
-            System.out.println("Clasa respectiva nu are calatogu fabricat");
+            System.out.println(Name + " didn't have an A average in 4th grade");
         }
     }
 
+    //toString() overwritten
     @Override
     public String toString() {
         return "Clasa{" + "WhichClass=" + WhichClass + ", Name='" + Name + '\'' + ", Catalog=" + Catalog + '}';
