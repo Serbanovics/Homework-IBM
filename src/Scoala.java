@@ -10,7 +10,7 @@ public class Scoala {
 
         public static void main(String[] args)
         {
-            Clasa c = new copil();
+            Clasa c = new Clasa();
             copil f = new copil();
             Scoala s = new Scoala();
 
@@ -24,12 +24,12 @@ public class Scoala {
             System.out.println(f.getName() + "............" + f);
 
 
-            c.setMedie(10);
+
             c.setName("Cazanu Dorel");
-            c.setCatalog(true);
+            c.setCatalog(false);
             c.setWhichClass(4);
             System.out.println(c);
-            c.GetNotaMedie();
+            c.Catalog();
 
 
             Clasa dif1 = new copil();
@@ -37,10 +37,6 @@ public class Scoala {
             dif2.getElevi();
             dif1.getName();
         }
-
-
-
-
 
 
 

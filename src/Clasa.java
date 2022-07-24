@@ -3,7 +3,7 @@ public class Clasa {
     private int WhichClass;
     private String Name;
     private boolean Catalog;
-    private int Medie;
+
 
     public Clasa() {
         super();
@@ -40,21 +40,13 @@ public class Clasa {
         Catalog = catalog;
     }
 
-    public int getMedie() {
-        return Medie;
-    }
-
-    public void setMedie(int medie) {
-        Medie = medie;
-    }
-
-    public void GetNotaMedie() {
-        if (getMedie() <=4) {
-            System.out.println(Name + " can't pass in 5th grade");
-        } else if (getMedie() >=5 && getMedie()<=9) {
-            System.out.print(Name + " made it to the 5th grade");
-        } else if (getMedie() == 10) {
-            System.out.print(Name + " passed the 5th grade with an average of 10");
+    public void Catalog(){
+        if(Catalog == true)
+        {
+            System.out.println("Clasa respectiva are calatogu farbricat");
+        }
+        else{
+            System.out.println("Clasa respectiva nu are calatogu fabricat");
         }
     }
 
